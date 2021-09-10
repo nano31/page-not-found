@@ -1,0 +1,129 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #c8c6c6;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5% 10% 0 10%;
+}
+
+.not-found-principal{
+    font-family: 'Inconsolata', monospace;
+    font-size: 24px;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 40px 0 0 77px;
+}
+
+img{
+    width: 539px;
+    height: 447px;
+}
+
+.texts__head{
+    font-family: 'Space Mono', monospace;
+    font-size: 64px;
+    line-height: 95px;
+}
+
+.texts__second{
+    font-family: 'Space Mono', monospace;
+    font-size: 24px;
+    line-height: 36px;
+}
+
+.cta-btn{
+    height: 60px;
+    width: 200px;
+    font-family: 'Space Mono', monospace;
+    text-transform: uppercase;
+    font-weight: 700;
+    line-height: 21px;
+    letter-spacing: .3px;
+    font-size: 15px;
+    background-color: #c8c6c6;
+    color: #000;
+    margin-top: 10%;
+    padding: 10px 20px;
+    border-radius: 25px;
+    outline: none;
+    border: 2px solid #986D8E;
+}
+
+/*.cta-btn::before{
+    content: "";
+    position: absolute;
+    left: 59%;
+    bottom: 10.3%;
+    transform: translate(-50%,-50%);
+    border: 3px solid #986D8E;
+    height: 65px;
+    width: 203px;
+    border-radius: 30px;
+}*/
+
+.cta-btn:hover{
+    cursor: pointer;
+    background-color: #986D8E;
+    transition:all .5s ease-in-out;
+}
+
+.page-foot{
+    font-family: 'Montserrat', sans-serif;
+    position: absolute;
+    bottom: 0;
+    font-size: 12px;
+}
+
+@media(max-width: 600px){
+    .container{
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .not-found-principal{
+        padding: 5%;
+    }
+
+    img{
+        width: 286px;
+        height: 238px;
+        padding: 0 15% 0 10%;
+    }
+
+    .texts__head{
+        width: 80%;
+        font-size: 38px;
+        line-height: 50px;
+        padding: 0 0 0 5%;
+    }
+
+    .texts__second{
+        width: 75%;
+        font-size: 18px;
+        line-height: 26px;
+        margin: 20px 10px;
+        padding: 0 0 0 5%;
+    }
+
+    .cta-btn{
+        width: 200px;
+        height: 50px;
+        margin: 10% 0;
+        padding: 0 10% 0 10%;
+    }
+
+    .page-foot{
+        font-size: 10px;
+    }
+}
